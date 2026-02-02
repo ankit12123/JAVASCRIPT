@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Check if a Number is Palindrome Take a number and check if it reads the same forward and backward (example: 121 → yes, 123 → no). -->
+  <script>
+        let  n= Number( prompt("Enter the number"));
+        console.log(n);
+         let Original=n;
+         
+        let rev=0;
+
+        while(n!=0){
+            let last = n % 10 ;
+            rev = rev*10 + last;
+            //   n = n / 10 ; or donot work because gives decimal value.
+              n = (n-last) / 10 ; // or 
+            // n = Math.floor(n / 10); //  Convert the decimal value in integer value like:- 12.80 gives 12.
+            
+        }
+        console.log(rev, 'reversed');
+         if(rev==Original){
+            console.log(Original, 'yes');
+            alert(  'Yes');
+            
+            
+        }
+
+        else{
+            console.log(rev, 'No');
+            alert('No');
+            
+        }
+        
+        
+        </script>
+     <!-- <script>
+     let n = Number (prompt("Enter a number"));
+        let reverse = 0;
+        let remainder;
+        temp = n;
+
+        while (n > 0){
+        remainder = n % 10;
+        reverse = reverse * 10 + remainder;
+        n = (n / 10)|0;
+        }
+
+        if (temp == reverse){
+            console.log("yes",reverse)
+        }else{
+             console.log("no",reverse)
+        }
+        </script> -->
+</body>
+</html>

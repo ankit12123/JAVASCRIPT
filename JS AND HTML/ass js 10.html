@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- //Voting Eligibility Checker Ask the user's age. If ≥18 → “Eligible to vote”, otherwise tell how many years are left. -->
+
+   <script>
+    let age=Number(prompt("Enter your Age "));
+    console.log(age);
+
+    if(age>=18){
+        console.log(age," Eligible for vote");
+        alert(" Eligible for vote");
+    }
+    else{
+       let  requiredage= 18-age;
+        console.log(requiredage, "Age Left for eligible for vote");
+        alert("Not Eligible ",requiredage );
+    }
+   </script>
+
+
+</body>
+</html>

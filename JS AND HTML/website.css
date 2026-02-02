@@ -1,0 +1,17 @@
+ #header{
+    display: flex;
+ }
+ h2{
+     display: flex;
+    color: blue;
+}
+#Nav{
+    display: flex;
+}
+li{
+    margin: 5px;
+    text-decoration: none;
+    list-style: none;
+}
+    
+ 

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Find the largest of Three Numbers from the Users and Display the largert One. -->
+
+    <script>
+        let x = prompt("Enter First Number ");
+        let numx = Number(x);
+        console.log(numx);
+
+        let y = prompt("Enter First Number ");
+        let numy = Number(y);
+        console.log(numy);
+
+        let z = prompt("Enter First Number ");
+        let numz = Number(z);
+        console.log(numz);
+
+        if (numx > numy && numx > numz) {
+            alert('X ,First Number is Largest ');
+            console.log('X ,First Number is Largest ');
+        }
+
+        else if (numy > numx && numy > numz) {
+            alert('Y ,Second Number is Largest ');
+            console.log('Y ,Second Number is Largest ');
+        }
+        else if (numz > numx && numz > numy) {
+            alert('Z ,Third Number is Largest ');
+            console.log('Z Third Number is Largest ');
+        }
+        else {
+            alert('All Numbers Are Same');
+            console.log('All Numbers Are Same ');
+        }
+
+
+
+    </script>
+</body>
+
+</html>

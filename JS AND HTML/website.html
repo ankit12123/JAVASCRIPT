@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive website</title>
+   <style>
+        #Header{
+            display: flex;
+            background-color: #fff;
+        }
+        #Title{
+            color: blue;
+            display: flex;
+            margin-left: 15px;
+            position: sticky;
+        }
+        #nav{
+            display: flex;
+            position: sticky;
+            
+            
+
+        }
+        .a{
+            margin-left: 20px;
+        }
+        #box1{
+            
+            background-color: blue;
+            height: 300px;
+            text-align: center;
+            padding-top: 40px;
+           
+
+
+        }
+        #Wlc{
+             color: white;
+
+            
+        }
+        #text{
+             color: white;
+           
+        }
+        #button{
+            background-color: #fff;
+            text-align: center;
+            border-radius: 70px;
+            height: 40px;
+            width: 150px;
+
+        }
+        #Smallbox{
+            display: flex;
+           
+            
+        }
+        #box2{
+            background-color: rgb(210, 236, 236);;
+            width: 22%;
+            text-align: center;
+            border-radius: 10px;
+            margin-left: 150px;
+            margin-top: 70px;
+            padding-top: 10px;
+            height: 170px;
+             box-shadow: 5px 5px 5px 5px #dfdfdf;
+            
+            
+            
+        }
+        #Fast{
+                color: blue;
+        }
+        #box3{
+            background-color: rgb(210, 236, 236);;
+            width: 22%;
+            text-align: center;
+            border-radius: 10px;
+            margin-left: 80px;
+            margin-top: 70px;
+            padding-top: 10px;
+            height: 170px;
+             box-shadow: 5px 5px 5px 5px #dfdfdf;
+             
+            
+            
+        }
+        #Pixel{
+            color: blue;
+        }
+        #box4{
+            background-color: rgb(210, 236, 236);;
+            width: 22%;
+            text-align: center;
+            border-radius: 10px;
+            margin-left: 80px;
+            margin-top: 70px;
+            padding-top: 10px;
+            height: 170px;
+             box-shadow: 5px 5px 5px 5px #dfdfdf;
+            
+            
+        }
+        #Classic{
+            color: blue;
+        }
+        #Content2{
+            background-color: rgb(182, 212, 212);
+            width: 96%;
+            height: 220px;
+            margin-left: 30px;
+            margin-top: 70px;
+            padding-top: 70px;
+            text-align: center;
+            border-radius: 10px;
+             box-shadow: 5px 5px 5px 5px #dfdfdf;
+            
+        }
+        #getintouch{
+            margin-top: 70px;
+            text-align: center;
+        }
+        #input{
+            text-align: center;
+            
+
+        }
+        input{
+            height: 40px;
+            width: 40%;
+            border: 2px solid rgb(176, 171, 171);
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        #comment{
+            margin-top: 20px;
+            
+            width: 40%;
+            border: 2px solid rgb(176, 171, 171);
+            border-radius: 5px;
+            height: 90px;
+        }
+        #sm{
+                position: relative;
+                right: 218px;
+                background-color: blue;
+                color: white;
+                border-radius: 4px;
+                height: 35px;
+
+
+        }
+        #Footer{
+           margin-top: 100px;
+            background-color: black;
+            text-align: center;
+            padding-top: 50px;
+            padding-bottom: 50px;
+
+        }
+        #copywright{
+            color: white;
+        }
+        #bluetext{
+                color: blue;
+        }
+        #button:hover{
+            background-color: red;
+            transform: translate(50px,25px);
+            transition:  2s ;
+            
+            
+            
+        }
+
+   </style>
+     
+</head>
+<body>
+    <script src="function.js"></script>
+    
+        <div id="Header">
+            <h1 id="Title"> Your Brand</h1>
+            <div id="nav">
+                <div class="a" >Homes</div>
+                <div  class="a">Features</div>
+                <div class="a">About</div>
+                <div class="a">Contacts</div>
+            </div>
+        </div>
+
+        <div id="box1">
+            <h1 id="Wlc">Welcome to Something <br>
+            Awesome</h1>
+            <p id="text">A beautiful fixed-width website built with pure HTML & CSS. No responsiveness. <br> <br>No Javascript Just Classic web.</p><br>
+            <button id="button" onclick="Getstarted()" > Get Started</button>
+        </div>
+
+        <div id="Smallbox">
+            <div id="box2">
+            <h2 id="Fast">Fast & Lightweight</h2>
+            <p>Noradius Queries, And inchyase <br>
+                menu as black Pure desktop <br>
+            predection  </p>
+
+        </div>
+        <div id="box3">
+            <h2 id="Pixel">Pixel-Perfect Control</h2>
+            <p>Noradius Queries, And inchyase and <br>
+                menu as black Pure desktop </p>
+
+        </div>
+
+        <div id="box4">
+            <h2 id="Classic">Classic Web Feel</h2>
+            <p>Noradius Queries, And inchyase and <br>
+                menu as black Pure desktop  are in <br>
+            well defined.</p>
+
+        </div>
+
+        </div>
+        <div id="Content2">
+            <h1> <big><b>About This Non-Responsive Layout </b></h1>
+            <p>This Layout is dileberately fixed at 1000px wide and will never adapt. On phones? You'll get a tiny <br>
+            zoomed-out version with horizontal scrolling--- just like the good old days. No hamburger menus, <br>
+            no collapsing columns no view port tricks. Pure,unapologetic desktop designs.</big> </p>
+        </div>
+
+        <h1 id="getintouch">Get In Touch</h1>
+        <div id="input"> 
+            <input type="text" placeholder="  Your Name"> <br>
+            <input type="email" placeholder="  Your Email"> <br>
+            <textarea name="comment" id="comment" placeholder=" Your Message"  ></textarea> <br>
+            <button id="sm">Send Message</button>
+
+            </div>
+
+            <div id="Footer">
+                <p id="copywright">@ 2025 Yourbrand Proudly non-responsive since 2025.</p>
+                <p id="bluetext">Privacy Policy - Terms of Service</p>
+            </div>
+        
+
+</body>
+</html>
