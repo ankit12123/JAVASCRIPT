@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        //object
+        let CPU={
+            Brand:"Dell",
+            Processor:"Intel i3",
+            Gpu:"Integrated Intel Graphics"
+        }
+        
+       
+       console.log(CPU.Brand);
+       alert(CPU.Processor);
+       console.log(CPU.Processor);
+       alert(CPU.Gpu);
+       console.log(CPU.Gpu);
+    </script> -->
+ 
+    <script>
+        //Object anmd methods combine.
+         let CPU={
+            Brand:"Dell",
+            Processor:"Intel i3",
+            Gpu:"Integrated Intel Graphics",
+
+            //Methods :- Inside a object we use anamenous(without name of function made) function and this keyword  is used inside the Object's block of code.
+           Description:function(){
+                return "Brand Name is " + this.Brand + " and Processor is " + this.Processor + "  and Gpu is " + this.Gpu;
+           }
+        } 
+        alert(CPU.Description());
+        console.log(CPU.Description());
+        document.write(CPU.Processor);
+    </script>
+</body>
+</html>
