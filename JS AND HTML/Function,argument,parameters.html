@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        // Normal Function
+        function add(){
+            let x=5;
+            let y= 10;
+            return x+y;
+        }
+        alert(add());
+    </script>
+    
+    <script>
+        //  Function Tking Input by User On Display
+        function add(){
+           let x=Number( prompt("Enter First"));
+           let y=Number( prompt("Enter Second Number"));
+           return x+y;
+        }
+        alert(add());
+    </script>
+
+     <script>
+        function add(x , y){ // Parameter is used like a variable 
+                return x+y;
+        }
+        alert(add(5,6)); // Arguments is filling the value of variable 
+    </script>
+
+    
+</body>
+</html>

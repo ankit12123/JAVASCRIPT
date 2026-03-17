@@ -8,16 +8,20 @@
         #Header{
             display: flex;
             background-color: #fff;
+            position: sticky;
+            top: 0;
         }
         #Title{
             color: blue;
             display: flex;
-            margin-left: 15px;
-            position: sticky;
+            margin-left: 25px;
+            
         }
         #nav{
             display: flex;
-            position: sticky;
+            position: absolute;
+            right: 50px;
+            margin-top: 40px;
             
             
 
@@ -145,20 +149,20 @@
         }
         #sm{
                 position: relative;
-                right: 218px;
+                right: 233px;
                 background-color: blue;
                 color: white;
                 border-radius: 4px;
                 height: 35px;
 
-
         }
+
         #Footer{
            margin-top: 100px;
             background-color: black;
             text-align: center;
-            padding-top: 50px;
-            padding-bottom: 50px;
+            padding-top: 40px;
+            padding-bottom: 40px;
 
         }
         #copywright{
@@ -168,11 +172,14 @@
                 color: blue;
         }
         #button:hover{
-            background-color: red;
-            transform: translate(50px,25px);
-            transition:  2s ;
-            
-            
+            background-color: rgb(155, 108, 243);
+            height: 42px;
+            width: 155px;
+            /* transform: translate(25px,20px); */
+            transition:  0.5s ;             
+        }
+        #sm:hover{
+            background-color: #042c77;
             
         }
 
@@ -224,10 +231,10 @@
 
         </div>
         <div id="Content2">
-            <h1> <big><b>About This Non-Responsive Layout </b></h1>
+            <h1> <b>About This Non-Responsive Layout </b></h1>
             <p>This Layout is dileberately fixed at 1000px wide and will never adapt. On phones? You'll get a tiny <br>
             zoomed-out version with horizontal scrolling--- just like the good old days. No hamburger menus, <br>
-            no collapsing columns no view port tricks. Pure,unapologetic desktop designs.</big> </p>
+            no collapsing columns no view port tricks. Pure,unapologetic desktop designs. </p>
         </div>
 
         <h1 id="getintouch">Get In Touch</h1>
@@ -235,7 +242,7 @@
             <input type="text" placeholder="  Your Name"> <br>
             <input type="email" placeholder="  Your Email"> <br>
             <textarea name="comment" id="comment" placeholder=" Your Message"  ></textarea> <br>
-            <button id="sm">Send Message</button>
+            <button id="sm" onclick="Sendmsg()">Send Message</button>
 
             </div>
 

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- <input id="abc" type="text" value="A" >
+    <script>
+        console.log(document.getElementById("abc").value=("Rahul"));
+
+    </script> -->
+
+     <input  type="text" id="cel" value="" placeholder="celcius" oninput="tempc()">  <!--//auto update using onkeypress or onkeyup is equal to oninput -->
+    <input type="text" id="Fa" value="" placeholder="Fahrenheit" oninput="tempfah()">
+
+    <!-- <button onclick="tempc()">Fahrenheit</button>
+    <button onclick="tempfah()">celcius</button> -->
+
+    <script>
+        function tempc(){
+            let tempcel= Number(document.getElementById('cel').value);
+            let Fahrenheit = (tempcel * 9/5)+ 32;
+             console.log(Fahrenheit);
+             console.log(document.getElementById("Fa").value=(Fahrenheit));
+            
+        }
+        function tempfah(){
+                let Fahrenheit=Number(document.getElementById('Fa').value);  //input box kavalue ko access ker rhe hai
+                let celcius=(Fahrenheit-32) * 5/9; // formula
+                console.log(celcius);  // print in console
+             console.log(document.getElementById("cel").value=(celcius)); // change the value of celcius.
+
+        }
+        //  console.log(document.getElementById("cel").value=("Fahrenheit"));
+        // console.log(document.getElementById("Fa").value=("Celcius"));
+    </script>
+</body>
+</html>

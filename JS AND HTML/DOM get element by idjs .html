@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #s{
+            background-color: green;
+            color: white;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <h1 id="a">My Header</h1>
+    <h2 id="abc" >My ID</h2>
+
+    <img id="xyz" src="download (1).jpg" alt="Not found" height="200px" width="200px">   <br><br>
+    <img id="pqr" src="download.jpg" alt="Not found" height="200px" width="200px">     <br>
+ 
+     <!-- direct mehtod without using function -->
+    <button onclick="document.getElementById('xyz').src='download.jpg'">First button</button> <br> <br>
+    <button onclick="document.getElementById('pqr').src='download (1).jpg'">Second button</button> <br> <br>
+
+    <button onmouseover="btn()">On Hovering</button>  <br>
+    
+    <script>
+        document.write('abc <br>def');
+        document.write('<h1>Heading</h1>');
+        console.log(document.getElementById("a").innerHTML= "New header!");
+
+        document.getElementById("abc").id="s";
+
+        //using function
+        function btn(){
+            
+            
+            document.getElementById('xyz').src="download (1).jpg";
+           
+            document.getElementById('pqr').src="download.jpg";
+            
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let person={
+                firstname:"Alice",
+                middlename:"Kumar",
+                lastname:"John",
+       
+        //getter
+         get fullname(){
+                return this.firstname + " "+ this.middlename +" " + this.lastname; 
+        },
+        //setter
+        set full(name){
+                let parts= name.split(" "); // splits how many parts 
+                this.firstname=parts[0];
+                this.middlename=parts[1];
+                this.lastname=parts[2];
+
+
+        }
+    };
+    //calling getter
+    console.log(person.fullname); 
+
+    //calling setter
+    person.full="Alice Kumar John";  
+    
+    //call one by one
+    console.log(person.firstname); // Alice
+
+    console.log(person.middlename); //kumar
+
+    console.log(person.lastname); // John
+
+    
+    </script>
+</body>
+</html>

@@ -39,6 +39,10 @@ function calculation(){
 function Getstarted(){
    alert("Let's start The Css");
 }
+function Sendmsg(){
+   alert("Let's start to Send Message");
+}
+
 
 
 
