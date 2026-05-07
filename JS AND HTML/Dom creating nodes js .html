@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="c">
+
+    <input type="text" id="abc" value="">
+    <button  onclick="create()">Click Here!</button>
+    <!-- <div id="a"> </div> -->
+    <script>
+        function create(){
+            const paragraph = document.createElement("p");     //creating a element p
+            const node1= document.createTextNode("WELCOME TO LEARN JAVASCRIPT! :  ");        // inserting the text in element
+
+  // Now we getting text from user by using input box
+            const node= document.createTextNode(document.getElementById('abc').value);
+            
+            paragraph.appendChild(node1);              //printing node1 value in paragraph
+              paragraph.appendChild(node);            // printing the node value in paragraph variable. 
+             
+            let element=document.getElementById('c');  // calling the body element by her id
+            element.appendChild(paragraph);             // printing the paragraph in body by using element variable.
+            
+        }
+    </script>
+</body>
+</html>

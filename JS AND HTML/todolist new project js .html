@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+   <style>
+    #bigcontainer{
+        margin-left: 20%;
+        box-shadow: 10px 10px 20px 70px white inset; 
+        border-radius: 20px;
+        height:500px ;
+        border: 1px solid rgb(236, 234, 234);;
+        width: 800px;
+        
+    }
+     #header{
+        text-align: center;
+     }
+     #needs{
+        border-radius: 10px;
+        width: 50%;
+        height: 50px;
+        margin-left: 25px;
+        border: 3px solid rgb(238, 233, 233);
+        
+        
+     }
+     #btn1{
+        width: 17%;
+        height: 56px;
+        background-color: rgb(60, 60, 241);
+        text-align: center;
+        border-radius: 10px;
+        margin-left: 15px;
+        color: white;
+        font-size: large;
+        border: none;
+     }
+     #dropdown{
+        width: 20%;
+        height: 55.63px;
+        border-radius: 15px;
+        margin-left: 15px;
+        border: 3px solid rgb(238, 233, 233);
+     }
+     #data{
+        display: flex;
+        text-align: left;
+        margin-top: 20px;
+        width: 92%;
+        margin-left: 25px;
+        border: 3px solid rgb(238, 233, 233);
+        border-radius: 15px;
+        height: 60px;
+        background-color: rgb(244, 249, 253);
+        
+
+        
+     }
+     #text{
+        
+        margin-top: 10px;
+        margin-left: 10px;
+        text-decoration: line-through;
+        color: rgb(145, 144, 143);
+     }
+     #edit{
+        
+        margin-top: 20px;
+        margin-left: 50%;
+        height: 30px;
+        border: none;
+        
+     }
+     #delete{
+            margin: 20px;
+            margin-left: 40px;
+            height: 30px;
+            border: none;
+            
+     }
+   </style>
+
+</head>
+
+<body>
+    <div id="bigcontainer">
+    <h1 id="header"> TODO LIST </h1>
+    <input type="text" id="needs" placeholder="   What needs to be done?">
+
+    <button id="btn1"><b>Add Task </b></button>
+    <select name="All" id="dropdown">
+        <option value="">All</option>
+        <option value="">Pending</option>
+        <option value="">Completed</option>
+    </select>
+
+    <div id="data">
+        
+        <input type="checkbox" style="margin-left: 15px; width: 20px; height: 40px; margin-top: 10px;"> 
+    <div id="text">
+
+        <div>read body language book   📖
+
+</div>
+        <div style="font-size: small;">  8/10/2022, 9:11:54 PM</div>
+     </div>
+
+        <button id="edit">✏️</button>
+        <button id="delete"> 🗑️</button>
+    </div>
+
+    </div>
+
+
+
+
+
+    <script>
+        // function add(){
+        //         let chkbx =  document.createElement("input");
+
+        //         chkbx.type = "checkbox";
+        //         let node = document.get
+
+
+        // }
+    </script>
+</body>
+</html>

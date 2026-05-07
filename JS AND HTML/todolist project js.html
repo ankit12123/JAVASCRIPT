@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="b">
+    <input type="text" id="add" value="">
+    <button id="btn" onclick="add()">ADD</button>
+
+    
+
+    <script>
+        function add(){
+
+            
+
+            
+            
+            let texta =  document.createElement("textarea");
+            let sub = document.createElement("submit");
+
+           // let  x1 = document.createElement("input");
+
+            //let att=document.createAttribute('type');
+         //   att.value = "checkbox";
+
+           // let  x = document.createElement("div");
+
+            let y = document.getElementById('add').value;
+           
+
+            let node = document.createTextNode(y);
+
+             let node1= document.createTextNode('del');
+
+            texta.appendChild(node);
+            sub.appendChild(node1);
+
+            let e = document.getElementById('b');
+            e.appendChild(texta);
+
+              let el = document.getElementById('b');
+            el.appendChild(sub);
+
+            
+        }
+        
+
+
+
+    </script>
+       <!-- function create(){
+            const paragraph = document.createElement("p");     //creating a element p
+            const node1= document.createTextNode("WELCOME TO LEARN JAVASCRIPT! :  ");        // inserting the text in element
+
+  // Now we getting text from user by using input box
+            const node= document.createTextNode(document.getElementById('abc').value);
+            
+            paragraph.appendChild(node1);              //printing node1 value in paragraph
+              paragraph.appendChild(node);            // printing the node value in paragraph variable. 
+             
+            let element=document.getElementById('c');  // calling the body element by her id
+            element.appendChild(paragraph);             // printing the paragraph in body by using element variable.
+            
+        } -->
+
+</body>
+</html>

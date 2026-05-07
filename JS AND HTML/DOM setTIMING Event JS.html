@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>setTimeOUT</h1>
+    <button onclick="change()">ready fo start!</button>
+    <p id="a">wait some time for changing!</p>
+
+    <h1>set Interval</h1>
+    <button id="btn" onclick="continous()">Click here for Interval!</button>
+    <p id="interval">wait some time for continous change!</p>
+
+    <script>
+
+         function out(){
+           document.getElementById('a').innerHTML=" Changing paragraph After 4 second ";
+         }
+
+         function change(){
+         setTimeout(out,4000);
+         }
+         let i=1;
+         function lop(){
+            i=i+1;
+                document.getElementById('interval').innerHTML=i;
+            }
+
+        //  function interval(){
+        //     document.getElementById('interval').innerHTML= lop();
+
+        //  }
+         function continous(){    
+         setInterval(lop,2000);
+         }
+
+    </script>
+</body>
+</html>
